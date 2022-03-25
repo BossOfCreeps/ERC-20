@@ -18,6 +18,11 @@ const config: HardhatUserConfig = {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`,
       accounts: [process.env.INFURA_PRIVATE_KEY as string]
     },
+  },
+  etherscan: {
+    apiKey: {
+      rinkeby: process.env.RINKEBY_APIKEY as string
+    }
   }
 };
 
